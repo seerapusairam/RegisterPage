@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IRCTC Catering</title>
+</head>
+<link rel="stylesheet" href="food.css"/>
+<style>
+td{
+text-align:center;
+}
+tr:nth-child(even) {background-color: #f2f2f2;}
+th{
+color:white;
+background-color:black;}
+
+table {
+  border-spacing: 1;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 70%;
+  margin: 0 auto;
+  position: relative;
+}
+
+</style>
+<body>
+
+<img src="https://www.irctc.co.in/nget/assets/images/logo.png" alt="irctc_icon" style="float:right;width:120px;height:140px;padding-right:50px;padding-top:5px;">
+<!--HEADINGS-->
+<h1 style="color:blue;text-align:center;font-size:80px;padding-top:35px;">IRCTC Catering Servies</h1>
+<table height="20" width="1000" align="center" >
+    <tr>
+        <th>S.NO</th>
+        <th>ITEM </th>
+        <th>RATE IN RS (inclusive of GST)</th>
+    </tr>
+    <tr >
+        <td colspan="3">Beverages</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Standard tea </td>
+        <td >Rs.6</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Instant Coffee</td>
+        <td>Rs.10</td>
+
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Soup </td>
+        <td>Rs.15</td>
+
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>1 litre bottle/1000 ml </td>
+        <td>Rs.15</td>
+    </tr>
+    <tr >
+        <td colspan="3">BREAKFAST</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Veg Break fast (Cutlet)</td>
+        <td >Rs.35</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Veg Break fast (Idli & Vada) </td>
+        <td>Rs.40</td>
+
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Veg Break fast (Upma & Vada) </td>
+        <td>Rs.45</td>
+
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>Non-Veg Breakfast (Egg Omelette)</td>
+        <td>Rs.60</td>
+    </tr>
+    <tr >
+        <td colspan="4">MEAL</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Veg Meal (Standard Casserole)</td>
+        <td>Rs.70</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Non-Veg Meal Standard Casserole (Egg Curry with Rice)</td>
+        <td>Rs.80</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Non-Veg Meal Standard Casserole (Chicken Curry with Rice)</td>
+        <td>Rs.120</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>Veg. Biryani</td>
+        <td>Rs.70</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>Egg Biryani</td>
+        <td>Rs.80</td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>Chicken Biryani </td>
+        <td>Rs.100</td>
+    </tr>
+    </tr>
+    <tr >
+        <td colspan="4">SNACKS</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Samosa</td>
+        <td>Rs.20</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Kachori</td>
+        <td>Rs.20</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Aloo Bonda</td>
+        <td>Rs.20</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>Veg Pakoda</td>
+        <td>Rs.20</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>Stuffed Bread Pakoda</td>
+        <td>Rs.30</td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>Masala Vada</td>
+        <td>Rs.30</td>
+    </tr>
+</table>
+
+<div>
+    <sub class="supplementary"><marquee scrollamount="10"  class="scrolltext">All Safety Measures will be taken while preparing Food</marquee></sub>
+</div>
+
+<div class="box" align="center">
+   <label><i class="fas fa-user"></i> &nbsp;Username</label>
+
+    <input type="text" placeholder="Enter Username" name="uname" id="uname" required/><br><br>
+
+    <label><i class="fas fa-user"></i> &nbsp;PNR Number</label>
+
+    <input type="text" placeholder="Enter your PNR Number" name="uname" id="pnr" required/><br><br>
+
+    <label><i class="fas fa-sort-numeric-up-alt"></i><b>&nbsp;Mobile Number</b></label>&nbsp;
+
+    <input type="number" placeholder="Enter Mobile Number" id="age" name="age" required><br><br>
+
+    <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+
+    <label for="Beverages">Beverages</label>
+    <select name="1" id="Beverages">
+        <option value="1" selected>Choose</option>
+        <option value="2">Standard tea</option>
+        <option value="3">Coffee</option>
+        <option value="3">Soup</option>
+        <option value="3">Coffee</option>
+    </select>
+
+    <label for="meal">Meal Type</label>
+    <select name="meal" id="meal">
+        <option value="bf" selected>Breakfast</option>
+        <option value="l">Lunch</option>
+        <option value="d">Dinner</option>
+    </select>
+
+
+</div>
+</body>
+</html>

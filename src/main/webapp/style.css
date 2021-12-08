@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+font-family : "Roboto";
+}
+    form {
+      border: 3px solid #f1f1f1;
+    }
+    #uname,#psw,#age,#gender,#email, #trainNo, #trainName, #source, #destination, #price, #remove {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      box-sizing: border-box;
+    }
+    button {
+
+      background-color: #5BB40B   ;
+      color: #fff;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      width: 50%;
+    }
+    button:hover {
+      background-color: #0ae90a ;
+      font-size : 20px;
+    }
+
+    .cancelbtn {
+        width: auto;
+        padding: 10px 18px;
+        background-color: #f44336;
+    }
+    .top-btn
+    {
+        border: none;
+        outline:none;
+        background-color:#fff;
+        cursor:pointer;
+    }
+    .train-btn
+    {
+            border: none;
+            outline:none;
+            background-color:#fff;
+            cursor:pointer;
+    }
+
+    .train-btn:hover
+    {
+        cursor:pointer;
+    }
+    .imgcontainer {
+
+      float: center;
+    }
+
+    .container {
+        margin-left : 350px;
+        margin-right : 320px;
+/*        padding : 50px 300px 20px 200px;*/
+    }
+    span.psw {
+      float: right;
+      padding-top: 16px;
+    }
+
+    span.new_user {
+      float: right;
+    }
+    .zoom {
+      padding: 50px;
+      background-color: transparent;
+      transition: transform .9s; /* Animation */
+      width: 200px;
+      height: 200px;
+      margin: 0 auto;
+    }
+
+    .zoom:hover {
+          transform: scale(1.8); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+        }
+    .dot {
+      height: 10px;
+      width: 10px;
+      background-color: rgba(0,0,0,0);
+      border-radius: 0%;
+      display: inline-block;
+    }
+    .zoom1
+    {
+          padding: 50px;
+          background-color: transparent;
+          transition: transform .9s; /* Animation */
+          width: 200px;
+          height: 200px;
+          margin: 0 auto;
+        }
+
+    .zoom1:hover {
+              transform: scale(1.8); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+              /*background-color:	#DCDCDC;*/
+            }
+    .dot1 {
+          height: -12px;
+          width: -12px;
+          background-color: rgba(0,0,0,0);
+          border-radius: 0%;
+          display: inline-block;
+        }
+    @media screen and (max-width: 300px) {
+      span.psw {
+        display: block;
+        float: none;
+      }
+
+      .cancelbtn {
+          width: 100%;
+      }
+
+    }
+
+    img {
+      height: 150px;
+    }

@@ -1,0 +1,9 @@
+Username : Prasanna
+PNR : 42349029
+Mobile Number : 983456789
+S.NO          ITEM                          PRICE
+1       Veg Meal (Standard Casserole)       RS.140
+2       Veg. Biryani                        RS.70
+3.      Chicken Biryani                     RS.100
+
+TOTAL AMOUNT: RS.310

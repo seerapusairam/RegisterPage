@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>IRCTC Catering</title>
 </head>
-<link rel="stylesheet" href="food.css"/>
 <style>
 td{
 text-align:center;
@@ -41,24 +40,24 @@ table {
     </tr>
     <tr>
         <td>1</td>
-        <td>Standard tea </td>
+        <td id="tea">Standard tea </td>
         <td >Rs.6</td>
     </tr>
     <tr>
         <td>2</td>
-        <td>Instant Coffee</td>
+        <td id="coffee">Instant Coffee</td>
         <td>Rs.10</td>
 
     </tr>
     <tr>
         <td>3</td>
-        <td>Soup </td>
+        <td id="soup">Soup </td>
         <td>Rs.15</td>
 
     </tr>
     <tr>
         <td>4</td>
-        <td>1 litre bottle/1000 ml </td>
+        <td id="water">1 litre bottle/1000 ml </td>
         <td>Rs.15</td>
     </tr>
     <tr >
@@ -66,24 +65,24 @@ table {
     </tr>
     <tr>
         <td>1</td>
-        <td>Veg Break fast (Cutlet)</td>
+        <td id="veg1">Veg Break fast (Cutlet)</td>
         <td >Rs.35</td>
     </tr>
     <tr>
         <td>2</td>
-        <td>Veg Break fast (Idli & Vada) </td>
+        <td id="veg2">Veg Break fast (Idli & Vada) </td>
         <td>Rs.40</td>
 
     </tr>
     <tr>
         <td>3</td>
-        <td>Veg Break fast (Upma & Vada) </td>
+        <td id="veg3">Veg Break fast (Upma & Vada) </td>
         <td>Rs.45</td>
 
     </tr>
     <tr>
         <td>4</td>
-        <td>Non-Veg Breakfast (Egg Omelette)</td>
+        <td id="veg4">Non-Veg Breakfast (Egg Omelette)</td>
         <td>Rs.60</td>
     </tr>
     <tr >
@@ -91,32 +90,32 @@ table {
     </tr>
     <tr>
         <td>1</td>
-        <td>Veg Meal (Standard Casserole)</td>
+        <td id="meal1">Veg Meal (Standard Casserole)</td>
         <td>Rs.70</td>
     </tr>
     <tr>
         <td>2</td>
-        <td>Non-Veg Meal Standard Casserole (Egg Curry with Rice)</td>
+        <td id="meal2">Non-Veg Meal Standard Casserole (Egg Curry with Rice)</td>
         <td>Rs.80</td>
     </tr>
     <tr>
         <td>3</td>
-        <td>Non-Veg Meal Standard Casserole (Chicken Curry with Rice)</td>
+        <td id="meal3">Non-Veg Meal Standard Casserole (Chicken Curry with Rice)</td>
         <td>Rs.120</td>
     </tr>
     <tr>
         <td>4</td>
-        <td>Veg. Biryani</td>
+        <td id="meal4">Veg. Biryani</td>
         <td>Rs.70</td>
     </tr>
     <tr>
         <td>5</td>
-        <td>Egg Biryani</td>
+        <td id="meal5">Egg Biryani</td>
         <td>Rs.80</td>
     </tr>
     <tr>
         <td>6</td>
-        <td>Chicken Biryani </td>
+        <td id="meal6">Chicken Biryani </td>
         <td>Rs.100</td>
     </tr>
     </tr>
@@ -125,32 +124,32 @@ table {
     </tr>
     <tr>
         <td>1</td>
-        <td>Samosa</td>
+        <td id="s1">Samosa</td>
         <td>Rs.20</td>
     </tr>
     <tr>
         <td>2</td>
-        <td>Kachori</td>
+        <td id="s2">Kachori</td>
         <td>Rs.20</td>
     </tr>
     <tr>
         <td>3</td>
-        <td>Aloo Bonda</td>
+        <td id="s3">Aloo Bonda</td>
         <td>Rs.20</td>
     </tr>
     <tr>
         <td>4</td>
-        <td>Veg Pakoda</td>
+        <td id="s4">Veg Pakoda</td>
         <td>Rs.20</td>
     </tr>
     <tr>
         <td>5</td>
-        <td>Stuffed Bread Pakoda</td>
+        <td id="s5">Stuffed Bread Pakoda</td>
         <td>Rs.30</td>
     </tr>
     <tr>
         <td>6</td>
-        <td>Masala Vada</td>
+        <td id="s6">Masala Vada</td>
         <td>Rs.30</td>
     </tr>
 </table>
@@ -159,38 +158,261 @@ table {
     <sub class="supplementary"><marquee scrollamount="10"  class="scrolltext">All Safety Measures will be taken while preparing Food</marquee></sub>
 </div>
 
-<div class="box" align="center">
-   <label><i class="fas fa-user"></i> &nbsp;Username</label>
+<div class="box" align="center" style="border: 2px outset #808080;"><br>
+    <b><label><i class="fas fa-user"></i> &nbsp;Username</label></b>
 
     <input type="text" placeholder="Enter Username" name="uname" id="uname" required/><br><br>
 
-    <label><i class="fas fa-user"></i> &nbsp;PNR Number</label>
+    <b><label><i class="fas fa-user"></i> &nbsp;PNR Number</label></b>
 
-    <input type="text" placeholder="Enter your PNR Number" name="uname" id="pnr" required/><br><br>
+    <input type="text" placeholder="Enter your PNR Number" name="pname" id="pnr" required/><br><br>
 
     <label><i class="fas fa-sort-numeric-up-alt"></i><b>&nbsp;Mobile Number</b></label>&nbsp;
 
-    <input type="number" placeholder="Enter Mobile Number" id="age" name="age" required><br><br>
+    <input type="number" placeholder="Enter Mobile Number" id="num" name="num" required><br><br>
 
-    <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
 
-    <label for="Beverages">Beverages</label>
-    <select name="1" id="Beverages">
-        <option value="1" selected>Choose</option>
-        <option value="2">Standard tea</option>
-        <option value="3">Coffee</option>
-        <option value="3">Soup</option>
-        <option value="3">Coffee</option>
-    </select>
-
-    <label for="meal">Meal Type</label>
+    <b><label for="meal">Meal Type</label></b>
     <select name="meal" id="meal">
-        <option value="bf" selected>Breakfast</option>
-        <option value="l">Lunch</option>
-        <option value="d">Dinner</option>
+        <option value="Beverages">Beverages</option>
+        <option value="Breakfast">Breakfast</option>
+        <option value="Meal">Meal</option>
+        <option value="Snack">Snack</option>
     </select>
+    <br>
 
+    <br>
+    <b><label><i class="fas fa-user"></i> &nbsp;Number of Dishes</label></b>
+    <input type="number" placeholder="Number of dishes" id="dishes" name="num1" required><br><br>
+    <a href="#" id="pass" onclick="addFoodDetails()" style="text-decoration:none;#pass:hover{color:red;text-decoration:none;-webkit-text-stroke: 2px #000000}">Fill Food Details</a><br><br>
+
+    <a href="/RegisterPage/src/main/webapp/printFood.html"><button>Order Food</button></a>
+
+    <div id="contain" style="padding-left:30px;"/>
+    <br>
+    <script type='text/javascript'>
+    function addFoodDetails()
+    {
+        // Number of inputs to create
+    var number = document.getElementById("dishes").value;
+
+    // Container where dynamic content will be placed
+    var container = document.getElementById("contain");
+
+    // Clear previous contents of the container
+    while (container.hasChildNodes())
+    {
+        container.removeChild(container.lastChild);
+    }
+    if(number <= 6)
+    {
+    for (var i=0;i<number;i++)
+    {
+        //TO CREATE THE NAME INPUT TAG
+        if(document.getElementById("meal").value === "Beverages"){
+
+        container.appendChild(document.createTextNode((i+1)+"."+" Dish Name : "));
+        var select = document.createElement("select");
+        select.name = "Beverages";
+        select.id = "Beverages" + i;
+        select.required = true;
+
+
+
+        var t = document.createElement("option");
+        t.value = 1;
+        t.text = document.getElementById("tea").innerText;
+        select.appendChild(t);
+
+        var soup = document.createElement("option");
+        soup.value = 2;
+        soup.text = document.getElementById("coffee").innerText;
+        select.appendChild(soup);
+
+        var coffee = document.createElement("option");
+        coffee.value = 3;
+        coffee.text = document.getElementById("soup").innerText;
+        select.appendChild(coffee);
+
+        var water = document.createElement("option");
+        water.value = 4;
+        water.text = document.getElementById("water").innerText;
+        select.appendChild(water);
+
+        container.appendChild(select);
+        //TO CREATE THE AGE INPUT TAG
+
+        container.appendChild(document.createTextNode("\tQuantity : "));
+        var input1 = document.createElement("input");
+        input1.type = "number";
+        input1.name = "age" + i;
+        input1.min = 1;
+        input1.max = 102;
+        input1.required = true;
+        container.appendChild(input1);
+
+        }else if(document.getElementById("meal").value === "Breakfast"){
+
+        container.appendChild(document.createTextNode((i+1)+"."+" Dish Name : "));
+        var select = document.createElement("select");
+        select.name = "Breakfast";
+        select.id = "Breakfast" + i;
+        select.required = true;
+
+
+
+        var t1 = document.createElement("option");
+        t1.value = 1;
+        t1.text = document.getElementById("veg1").innerText;
+        select.appendChild(t1);
+
+        var veg2 = document.createElement("option");
+        veg2.value = 2;
+        veg2.text = document.getElementById("veg2").innerText;
+        select.appendChild(veg2);
+
+        var veg3 = document.createElement("option");
+        veg3.value = 3;
+        veg3.text = document.getElementById("veg3").innerText;
+        select.appendChild(veg3);
+
+        var veg4 = document.createElement("option");
+        veg4.value = 4;
+        veg4.text = document.getElementById("veg4").innerText;
+        select.appendChild(veg4);
+
+        container.appendChild(select);
+        //TO CREATE THE AGE INPUT TAG
+
+        container.appendChild(document.createTextNode("\tQuantity : "));
+        var input1 = document.createElement("input");
+        input1.type = "number";
+        input1.name = "age" + i;
+        input1.min = 1;
+        input1.max = 102;
+        input1.required = true;
+        container.appendChild(input1);
+
+        }else if(document.getElementById("meal").value === "Meal"){
+
+        container.appendChild(document.createTextNode((i+1)+"."+" Dish Name : "));
+        var select = document.createElement("select");
+        select.name = "Meal";
+        select.id = "Meal" + i;
+        select.required = true;
+
+        var meal1 = document.createElement("option");
+        meal1.value = 1;
+        meal1.text = document.getElementById("meal1").innerText;
+        select.appendChild(meal1);
+
+        var meal2 = document.createElement("option");
+        meal2.value = 2;
+        meal2.text = document.getElementById("meal2").innerText;
+        select.appendChild(meal2);
+
+        var meal3 = document.createElement("option");
+        meal3.value = 3;
+        meal3.text = document.getElementById("meal3").innerText;
+        select.appendChild(meal3);
+
+        var meal4 = document.createElement("option");
+        meal4.value = 4;
+        meal4.text = document.getElementById("meal4").innerText;
+        select.appendChild(meal4);
+
+        var meal5 = document.createElement("option");
+        meal5.value = 5;
+        meal5.text = document.getElementById("meal5").innerText;
+        select.appendChild(meal5);
+
+        var meal6 = document.createElement("option");
+        meal6.value = 6;
+        meal6.text = document.getElementById("meal6").innerText;
+        select.appendChild(meal6);
+
+
+
+        container.appendChild(select);
+        //TO CREATE THE AGE INPUT TAG
+
+        container.appendChild(document.createTextNode("\tQuantity : "));
+        var input1 = document.createElement("input");
+        input1.type = "number";
+        input1.name = "age" + i;
+        input1.min = 1;
+        input1.max = 102;
+        input1.required = true;
+        container.appendChild(input1);
+
+        }else if(document.getElementById("meal").value === "Snack"){
+
+        container.appendChild(document.createTextNode((i+1)+"."+" Dish Name : "));
+        var select = document.createElement("select");
+        select.name = "Snack";
+        select.id = "Snack" + i;
+        select.required = true;
+
+        var s1 = document.createElement("option");
+        s1.value = 1;
+        s1.text = document.getElementById("s1").innerText;
+        select.appendChild(s1);
+
+        var s2 = document.createElement("option");
+        s2.value = 2;
+        s2.text = document.getElementById("s2").innerText;
+        select.appendChild(s2);
+
+        var s3 = document.createElement("option");
+        s3.value = 3;
+        s3.text = document.getElementById("s3").innerText;
+        select.appendChild(s3);
+
+        var s4 = document.createElement("option");
+        s4.value = 4;
+        s4.text = document.getElementById("s4").innerText;
+        select.appendChild(s4);
+
+        var s5 = document.createElement("option");
+        s5.value = 5;
+        s5.text = document.getElementById("s5").innerText;
+        select.appendChild(s5);
+
+        var s6 = document.createElement("option");
+        s6.value = 6;
+        s6.text = document.getElementById("s6").innerText;
+        select.appendChild(s6);
+
+        container.appendChild(select);
+        //TO CREATE THE AGE INPUT TAG
+
+        container.appendChild(document.createTextNode("\tQuantity : "));
+        var input1 = document.createElement("input");
+        input1.type = "number";
+        input1.name = "age" + i;
+        input1.min = 1;
+        input1.max = 102;
+        input1.required = true;
+        container.appendChild(input1);
+        }
+
+        // Append a line break
+        container.appendChild(document.createElement("br"))
+        container.appendChild(document.createElement("br"));
+        }
+    }
+    else
+    {
+        alert("Maximum number of Dishes is 6");
+    }
+
+
+
+}
+
+</script>
 
 </div>
+
 </body>
 </html>

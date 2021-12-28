@@ -10,23 +10,24 @@ pipeline {
             }
         }
         stage('Upload War To Nexus'){
-        nexusArtifactUploader artifacts:[
-            [
-                artifactId: 'RegisterPage',
-                classifier: '',
-                file: '/var/lib/jenkins/jobs/myTestpipeline/config.xml',
-                type: 'war'
-            ]
-        ],
-            credentialsId: '623a7bba-d3ad-4186-9ff7-62c633b5722c',
-            groupId: 'org.example',
-            nexusUrl: 'ec2-18-222-150-10.us-east-2.compute.amazonaws.com:8081',
-            nexusVersion: 'nexus3',
-            protocol: 'http',
-            repository: 'book-store',
-            version: '1.0-SNAPSHOT'
+            steps{
+                nexusArtifactUploader artifacts:[
+                   [
+                        artifactId: 'RegisterPage',
+                       classifier: '',
+                       file: '/var/lib/jenkins/jobs/myTestpipeline/config.xml',
+                      type: 'war'
+                 ]
+             ],
+                   credentialsId: '623a7bba-d3ad-4186-9ff7-62c633b5722c',
+                   groupId: 'org.example',
+                   nexusUrl: 'ec2-18-222-150-10.us-east-2.compute.amazonaws.com:8081',
+                   nexusVersion: 'nexus3',
+                   protocol: 'http',
+                   repository: 'book-store',
+                   version: '1.0-SNAPSHOT'
   
             }
         }
     }
-}
+ }

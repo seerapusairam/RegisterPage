@@ -15,8 +15,8 @@ pipeline {
                    [
                         artifactId: 'RegisterPage',
                        classifier: '',
-                       file: 'target/myTestpipeline-1.0-SNAPSHOT.war',
-                      type: 'war'
+                       file: '/var/lib/jenkins/jobs/myTestpipeline/config.xml',
+                      type: 'xml'
                  ]
              ],
                    credentialsId: '623a7bba-d3ad-4186-9ff7-62c633b5722c',

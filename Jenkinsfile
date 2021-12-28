@@ -8,6 +8,7 @@ pipeline {
             steps{
                   sh script: 'mvn clean package'
             }
+        }
         stage('Upload War To Nexus'){
         nexusArtifactUploader artifacts:[
             [

@@ -15,7 +15,7 @@ pipeline {
                    [
                         artifactId: 'RegisterPage',
                        classifier: '',
-                       file: '/var/lib/jenkins/jobs/myTestpipeline/',
+                       file: 'target/myTestpipeline-1.0-SNAPSHOT.war',
                       type: 'war'
                  ]
              ],

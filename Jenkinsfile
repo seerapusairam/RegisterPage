@@ -24,7 +24,7 @@ pipeline {
                    nexusUrl: '18.222.150.10:8081',
                    nexusVersion: 'nexus3',
                    protocol: 'http',
-                   repository: 'maven-snapshots',
+                   repository: 'book-store1',
                    version: '1.0-SNAPSHOT'
   
             }

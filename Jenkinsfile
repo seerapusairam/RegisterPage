@@ -21,7 +21,7 @@ pipeline {
              ],
                    credentialsId: '623a7bba-d3ad-4186-9ff7-62c633b5722c',
                    groupId: 'org.example',
-                   nexusUrl: '18.222.150.10:8081',
+                   nexusUrl: '18.225.10.135:8081',
                    nexusVersion: 'nexus3',
                    protocol: 'http',
                    repository: 'maven-snapshots',

@@ -24,7 +24,7 @@ pipeline {
                    nexusUrl: '18.225.10.135:8081',
                    nexusVersion: 'nexus3',
                    protocol: 'http',
-                   repository: 'book',
+                   repository: 'book-sanpshots',
                    version: '1.0-SNAPSHOT'
   
             }
